@@ -1,0 +1,18 @@
+[package]
+name = "unity_rsgen_sample_cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.docs.rs]
+targets = [
+    # windows
+    "x86_64-pc-windows-msvc",
+]
+[dependencies]
+rand = "0.8.3"
+# local dependencies
+unity_rsgen_sample = { path = "../unity_rsgen_sample" }
+
+

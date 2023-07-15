@@ -1,0 +1,22 @@
+[package]
+name = "unity_rsgen_sample"
+version = "0.1.0"
+edition = "2021"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+# もし、このライブラリをunity_rsgen_sample_cliから使う場合は、以下の行をコメントアウトする
+crate-type = ["cdylib"]
+
+[package.metadata.docs.rs]
+targets = [
+    "aarch64-linux-android",
+    "x86_64-apple-darwin",
+    "x86_64-pc-windows-msvc",
+    "x86_64-unknown-linux-gnu",
+]
+
+[build-dependencies]
+csbindgen = "1.7.3"
