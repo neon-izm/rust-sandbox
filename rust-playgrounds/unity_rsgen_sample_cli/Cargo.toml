@@ -9,6 +9,10 @@ edition = "2021"
 targets = [
     # windows
     "x86_64-pc-windows-msvc",
+    # m1 mac
+    "aarch64-apple-darwin",
+    # intel mac
+    "x86_64-apple-darwin",
 ]
 [dependencies]
 rand = "0.8.3"
