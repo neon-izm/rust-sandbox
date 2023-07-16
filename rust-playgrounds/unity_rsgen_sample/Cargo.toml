@@ -16,6 +16,8 @@ targets = [
     "x86_64-apple-darwin",
     "x86_64-pc-windows-msvc",
     "x86_64-unknown-linux-gnu",
+    #m1 mac
+    "aarch64-apple-darwin",
 ]
 
 [build-dependencies]
