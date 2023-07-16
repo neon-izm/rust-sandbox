@@ -7,8 +7,8 @@ edition = "2021"
 [dependencies]
 
 [lib]
-# もし、このライブラリをunity_rsgen_sample_cliから使う場合は、以下の行をコメントアウトする
-crate-type = ["cdylib"]
+# unity_rsgen_sample_cliから使うため、libを追加しておく.WinodwsとAndroidはcdylibにする。
+crate-type = ["cdylib","lib"]
 
 [package.metadata.docs.rs]
 targets = [

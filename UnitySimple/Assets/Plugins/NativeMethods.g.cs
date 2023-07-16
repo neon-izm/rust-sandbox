@@ -24,6 +24,12 @@ namespace CsBindgen
         [DllImport(__DllName, EntryPoint = "my_sub", CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
         public static extern int my_sub(int x, int y);
 
+        [DllImport(__DllName, EntryPoint = "my_multiply", CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern int my_multiply(int x, int y);
+
+        [DllImport(__DllName, EntryPoint = "my_divide", CallingConvention = CallingConvention.Cdecl, ExactSpelling = true)]
+        public static extern int my_divide(int x, int y);
+
 
     }
 
